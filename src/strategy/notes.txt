@@ -1,0 +1,48 @@
+Strategy Pattern
+
+A behavior design pattern that defines a family of algorithm, encapsulates each one, and makes them interchangeable.
+The Strategy Pattern lets the algorithm vary independently from the clients that use it.
+
+OO principles used in this pattern:
+- Encapsulate what varies
+- Favor composition over inheritance
+- Program to interfaces, not implementations
+
+Implementation:
+- In the context(original) class, identify the algorithm that changes frequently and it's all variants(strategies).It
+may be conditional
+statements leading to execution of a specific variant of the algorithm.
+- Declare a strategy interface common to all variants of the algorithm with a method to invoke a specific algorithm.
+- All variants should be placed in their set of concrete classes implementing the common strategy interface.
+- Declare an instance variable in the context class with the interface type to store the reference to one of the
+strategy object. Add a setter method in the context class to replace the object via the strategy interface.
+- The context class should delegate the algorithm invocation to the strategy reference object
+- Clients should have a simple interface that passes the desired strategy object to the setter method and invoke the
+algorithm.
+- The context do not know the strategies as long as it knows an algorithm is implemented through the interface.
+
+When to use the Strategy Pattern:
+- When you need to define the class with different variations of an algorithm
+- When you need to use one of the multiple behaviors dynamically
+- When you need to use long list of conditionals
+- To avoid duplicate code
+- When a class update forces other classes to change
+- To hide complicated/secret code from the user
+- When you have a lot of similar classes which differ only in the executing a specific behavior. Then you can extract
+the varying behavior into a separate class hierarchy and combine the original classes into one, thereby reducing
+code duplication
+- When you want to isolate the business logic from implementation details of the algorithm that might be not important
+from the context of the logic
+
+Advantages:
+- Algorithms can be changed runtime
+- Implementation details are hidden from the code that uses it.
+- Replaced inheritance with composition
+- Open/Closed Principle: New strategies can be introduced without having to change the existing code.
+
+Disadvantages:
+- Increased number of classes and objects
+- If the algorithms change rarely, then there is no point in implementing Strategy Pattern by complicating the program
+- Clients must be aware of the differences in the algorithms to be able to pick a desired one.
+- Modern programming languages support functional type that lets you implement variations of an algorithm inside a set
+of anonymous functions. These functions can be used as strategy objects.

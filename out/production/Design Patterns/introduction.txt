@@ -1,0 +1,31 @@
+**Design Patterns**
+
+1. Designed patterns are reusable solutions to the common problems in everyday programming(mostly in OOPS).
+2. They act as templates that can be customized and applied to problem solving.
+3. They are targeted at solving the problems of object generation and integration.
+4. They provide the solutions that help to define the system architecture.
+5. They enhance the reusability that leads to robust and highly maintainable code.
+6. A pattern is not a specific piece of code, but a general concept for solving a particular problem.
+7. Patterns are often confused with algorithms. An algorithm is a definite set of step to achieve a goal, a pattern
+is a high-level description of a solution.
+8. Four authors of the book(Gang of four) "Elements of reusable Object-Oriented software" has brought the concept of
+design patterns.
+9. The book is divided into two parts. First part explains the pros and cons of Object-Oriented programming and the
+second part explains the evolution of 23 classic software design patterns.
+10.Three types - Creational, Structural and Behavioral.
+Creational -
+This design pattern deals with the object creation and initialization. They give flexibility in deciding which objects
+need to be created.
+Ex: Singleton, Factory, Abstract Factory etc.
+
+Structural -
+This design pattern deals with the class and object composition and focuses on decoupling of interfaces and
+implementation of classes and its object.
+Ex: Adapter, Bridge, Facade etc.
+
+Behavioral -
+This design pattern deals with the communication and assignment of responsibilities between the objects.
+Ex: Chain of Responsibility, Command, Interpreter etc.
+
+11. Criticism of patterns - kludges to weak programming languages that gives a language much needed super abilities,
+inefficient solution because of not adapting to the context of the project and unjustified use.
