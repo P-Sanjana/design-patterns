@@ -1,0 +1,3 @@
+Observer Pattern
+It is a behavioral design pattern that lets you define a subscription mechanism to
+notify other objects about any events that happen in the object that they are observing.
